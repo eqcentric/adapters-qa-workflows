@@ -46,7 +46,6 @@ jobs:
           password: ${{ secrets.AZ_CLIENT_SECRET }}
 
       - name: Checkout code
-        if: '!inputs.adapter-image'
         uses: actions/checkout@v3
 
       - name: Docker pull dbt image
